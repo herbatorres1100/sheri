@@ -89,3 +89,27 @@ p {
     color: black;
     
 }
+
+@media screen and (max-width: 600px) {
+ 
+  header {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+img {
+    margin: 25px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px;
+    width: 125px;
+}
+
+h2 {
+  display: flex;
+}
+
+}
