@@ -7,30 +7,126 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">  
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">   
+</head>
     <body>
-            <script src="index.js"></script>
-            <header>
-                <h1 class="banner">Events By Sheri</h1>
-                <img src="images/sheri.png">
-            </header>
-                    <h2 class="timeless">Timeless... Intimate... Elegant...</h2>
+    <div class="section-1">
         <div class="navigation">
             <ul>
-                <li><a href="./about.html">About me</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./request.html">Request Form</a></li>
-             </ul>
-        </div>
-        <div class="section">
-                <p>As an event planner who specializes in small gatherings, my approach is to create intimate, elegant events that are truly timeless. From start to finish, I'm committed to helping you craft an experience that's unique, memorable, and perfectly tailored to your needs.</p>
-
-                <p>I believe that the best events are the ones that create a warm, welcoming atmosphere for guests, which is why I focus on creating intimate settings that make everyone feel at home. From selecting the perfect venue to designing custom decor, every detail is carefully planned to create a cohesive and elegant look and feel.</p>
-
-                <p>Whether you're planning a dinner party, a birthday celebration, or a small wedding, I'm here to help you every step of the way. With my expertise and attention to detail, I'll work closely with you to create an event that's both timeless, intimate, and elegant leaving a lasting impression on you and your guests.</p>
+                <li><a href="#aboutme">My Story</a></li>
+                <li><a href="#contactme">Let's Connect</a></li>
                 
+                <li><a href="./request.html">Let's Go</a></li>
+             </ul>
+        </div>    
+        <div class="main">
+                <h1 class="banner">Events By Sheri</h1>
+                <div class="timeless-main">
+                <p class="timeless">Timeless</p>
+                <p class="timeless">Intimate</p>
+                <p class="timeless">Elegant</p>
+                </div>
+                
+             
         </div>
+    </div>
+        <div class="section-2">
+
+            <div class="paragraph_one">
+             <div class="mystory">  
+            <p id="aboutme">My Story</p>
+            <p>Event planning has been my passion for almost 20 years, rooted 
+                in thoughtful design and personalized experiences.My passion for event planning began when I was a little girl, 
+                growing up in Chicago, inspired by my mom, a consummate entertainer.
+                 She frequently hosted dinner parties and celebrations, creating an
+                  atmosphere of enjoyment. I loved the excitement so much that I’d 
+                  sneak down at night just to listen in. As I grew older, I began 
+                  to plan parties and events for my family and friends, including
+                   extravagant birthday parties for my own children. What started 
+                   as a hobby gradually evolved into a fulfilling career.</p>
+                   
+                </div> 
+                <img src="/images/flowers.jpg">
+  </div>
+ 
+            
+                     
+
+                      <p id="aboutme">What To Expect</p>
+
+                      <div class="paragraph_two">
+                        <p>I specialize in intimate gatherings—thoughtfully designed events for 2 to 50 guests—where every detail is intentional and each element reflects a distinct personality and vision. I work closely with hosts to bring their ideas to life, offering creative direction, vendor sourcing, and hands-on coordination. My goal is to alleviate the stress of planning so they can be fully present for the celebration.</p>
+
+                        <p>From venue selection to custom design, I take a detail-oriented approach to ensure a cohesive and elevated experience from concept to execution. Whether it’s an intimate dinner, a milestone celebration, or a small wedding, each event is crafted with elegance, precision, and genuine care.</p>
+                   </div>
+
+                   <div class="images_top">
+                    <img src="/images/card.jpg" class="enlargeable" alt="">
+                    <img src="/images/chairs.jpg" class="enlargeable" alt="">
+                    <img src="/images/invitation.jpg" class="enlargeable" alt="">
+                  </div>
+                  
+                  <div class="images_bottom">
+                    <img src="/images/mom_grandaughter.jpg" class="enlargeable" alt="">
+                    <img src="/images/outdoor.jpg" class="enlargeable" alt="">
+                    <img src="/images/table.jpg" class="enlargeable" alt="">
+                  </div>
+
+                  <footer>
+                    <p class="footer-logo">Events By Sheri</p>
+                  
+                    <div class="icons"> 
+                      <a href="mailto:scottsheri@hotmail.com" aria-label="Email">
+                        <i class="fa-regular fa-envelope fa-2x"></i>
+                      </a>
+                      <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                      </a>
+                      <a href="mailto:scottsheri@hotmail.com" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in fa-2x"></i>
+                      </a>
+                    </div>
+                  
+                    <p>Based in Saint Louis, MO</p>
+                    <p>Now booking Summer & Fall 2025 events</p>
+                  
+                    <p class="footer-note">© 2025 Events By Sheri. All rights reserved.</p>
+                  </footer>
+        </div>
+  
+      
+        <!-- Image Modal -->
+<div id="img-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+    
+  <script>
+    const modal = document.getElementById("img-modal");
+    const modalImg = document.getElementById("modal-img");
+    const closeBtn = document.querySelector(".close");
+    const imgs = document.querySelectorAll(".enlargeable");
+  
+    imgs.forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+  
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>                 
+       
     </body>
 </html>
