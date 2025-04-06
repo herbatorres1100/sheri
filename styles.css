@@ -95,8 +95,8 @@ p {
 
 .banner {
     text-align: center;
-    margin: 20px;
-    font-family: "Mrs Saint Delafield", cursive;
+    margin: 0;
+    font-family: myFirstFont;
     font-size: 70px;
     font-weight: 50;
     color: white;
